@@ -1,55 +1,97 @@
 # POSTag_Halodoc_Indo_Reviews
 This repository contains an analysis of user reviews for the HaloDoc application, a telemedicine platform in Indonesia. The project focuses on Natural Language Processing (NLP) techniques, specifically Part-of-Speech (POS) tagging, to gain insights into user feedback and sentiment.
 
-# POS Tagging Analysis of HaloDoc Reviews
+# HaloDoc App Review POS Tagging Analysis
 
-This project performs Part-of-Speech (POS) tagging on HaloDoc app reviews to analyze user feedback and sentiment.
+This project analyzes user reviews of the HaloDoc application using Part-of-Speech (POS) tagging to gain insights into the language used by users when describing their experiences.
 
-## Project Overview
+## Project Structure
+HaloDoc-Review-Analysis/
+│
+├── data/
+│ ├── raw/
+│ │ └── kompas_news_bpjs_text_20240923_sample.csv
+│ └── processed/
+│ ├── word_pos_tags.csv
+│ ├── top_pos_entities.csv
+│ ├── pos_tags_summary_2.csv
+│ └── pos_tags_all_summary.csv
+│
+├── notebooks/
+│ └── PRTugas_PBAWeek5_POSTag_HaloDoc.ipynb
+│
+├── results/
+│ └── (visualization outputs, if any)
+│
+├── README.md
+└── requirements.txt
 
-The main objectives of this project are:
-1. Preprocess and clean HaloDoc app review data
-2. Perform POS tagging on the cleaned text
-3. Analyze the distribution of POS tags
-4. Identify top entities and their frequencies
 
-## Repository Structure
+## Overview
 
-- `data/`: Contains raw and processed data files
-- `notebooks/`: Jupyter notebooks for analysis
-- `src/`: Source code for utility functions
-- `requirements.txt`: List of Python dependencies
-- `README.md`: Project documentation
+This project uses Natural Language Processing techniques, specifically Part-of-Speech (POS) tagging, to analyze user reviews of the HaloDoc application. The analysis aims to understand the linguistic patterns and common themes in user feedback.
 
-## Data Files
+## Methodology
 
-1. `word_pos_tags.csv`: Contains individual words and their POS tags
-2. `top_pos_entities.csv`: Lists the most frequent entities and their POS tags
-3. `pos_tags_summary_2.csv`: Provides a summary of POS tag distributions
-4. `pos_tags_all_summary.csv`: Offers a comprehensive summary of all POS tags
+1. Data Collection: Reviews were collected from the HaloDoc app on the Google Play Store.
+2. Data Preprocessing: Text cleaning and normalization were performed.
+3. POS Tagging: The Polyglot library was used for POS tagging in Indonesian language.
+4. Analysis: Frequency analysis of POS tags and entities was conducted.
 
-## Getting Started
+## Results
 
-1. Clone this repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run the Jupyter notebook in the `notebooks/` directory
+The analysis yielded several interesting insights:
 
-## Key Findings
+1. Most Common POS Tags:
+   - PUNCT (Punctuation): 15,292 occurrences
+   - NOUN (Nouns): 13,257 occurrences
+   - PROPN (Proper Nouns): 12,920 occurrences
+   - VERB (Verbs): 8,914 occurrences
+   - ADV (Adverbs): 7,605 occurrences
 
-- Most common POS tags in reviews
-- Frequently mentioned entities
-- Distribution of different word categories
+2. Top Entities:
+   - "dokter" (doctor): 2,078 occurrences
+   - "obat" (medicine): 1,857 occurrences
+   - "aplikasi" (application): 874 occurrences
+   - "konsultasi" (consultation): 812 occurrences
+   - "rumah" (home): 470 occurrences
+
+3. Key Observations:
+   - High frequency of nouns and proper nouns suggests users often refer to specific features or aspects of the app.
+   - Significant presence of verbs indicates users describing actions or experiences.
+   - Adverbs are commonly used, possibly to qualify experiences (e.g., "sangat membantu" - very helpful).
+   - Punctuation is heavily used, which may indicate expressive or detailed reviews.
+
+## Conclusions
+
+The POS tagging analysis reveals that users frequently discuss specific features of the HaloDoc app, particularly focusing on doctors, medicines, and the consultation process. The language used is often descriptive and action-oriented, with users expressing their experiences in detail.
 
 ## Future Work
 
-- Sentiment analysis based on POS patterns
-- Topic modeling using identified entities
-- Comparative analysis with other app reviews
+- Sentiment analysis to correlate POS patterns with positive/negative reviews
+- Topic modeling to identify main themes in user feedback
+- Comparative analysis with competitor app reviews
 
-## Contributors
+## Requirements
 
-Naura Jasmine Azzahra
+See `requirements.txt` for the list of Python packages required to run the analysis.
+
+## How to Use
+
+1. Clone this repository
+2. Install required packages: `pip install -r requirements.txt`
+3. Run the Jupyter notebook in the `notebooks/` directory
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology (MIT). It puts only very limited restriction on reuse and has, therefore, high license compatibility.
+
+Key points of the MIT License:
+- It allows users to do anything with the code, including using it commercially.
+- The only requirement is that the license and copyright notice must be included with the code.
+- It provides no warranty or liability protection for the original author.
+
+For the full license text, please refer to the LICENSE file in this repository.
+
