@@ -6,7 +6,7 @@ This repository contains an analysis of user reviews for the HaloDoc application
 This project analyzes user reviews of the HaloDoc application using Part-of-Speech (POS) tagging to gain insights into the language used by users when describing their experiences.
 
 ## Project Structure
-
+```
 HaloDoc-Review-Analysis/
 ├── data/
 │   ├── raw/
@@ -22,7 +22,7 @@ HaloDoc-Review-Analysis/
 │   └── (visualization outputs, if any)
 ├── README.md
 └── requirements.txt
-
+```
 
 ## Overview
 
