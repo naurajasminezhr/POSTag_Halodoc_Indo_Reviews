@@ -6,23 +6,20 @@ This repository contains an analysis of user reviews for the HaloDoc application
 This project analyzes user reviews of the HaloDoc application using Part-of-Speech (POS) tagging to gain insights into the language used by users when describing their experiences.
 
 ## Project Structure
+
 HaloDoc-Review-Analysis/
-│
 ├── data/
-│ ├── raw/
-│ │ └── kompas_news_bpjs_text_20240923_sample.csv
-│ └── processed/
-│ ├── word_pos_tags.csv
-│ ├── top_pos_entities.csv
-│ ├── pos_tags_summary_2.csv
-│ └── pos_tags_all_summary.csv
-│
+│   ├── raw/
+│   │   └── df_halodoc.csv
+│   └── processed/
+│       ├── word_pos_tags.csv
+│       ├── top_pos_entities.csv
+│       ├── pos_tags_summary_2.csv
+│       └── pos_tags_all_summary.csv
 ├── notebooks/
-│ └── PRTugas_PBAWeek5_POSTag_HaloDoc.ipynb
-│
+│   └── PBAWeek5_POSTag_HaloDoc_Indo_Review_5026211005.ipynb
 ├── results/
-│ └── (visualization outputs, if any)
-│
+│   └── (visualization outputs, if any)
 ├── README.md
 └── requirements.txt
 
