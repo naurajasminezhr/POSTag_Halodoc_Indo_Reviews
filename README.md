@@ -48,7 +48,7 @@ The main objectives of this project are:
 
 ## Contributors
 
-[Your Name]
+Naura Jasmine Azzahra
 
 ## License
 
