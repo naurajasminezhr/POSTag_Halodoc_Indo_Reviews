@@ -39,21 +39,23 @@ This project uses Natural Language Processing techniques, specifically Part-of-S
 
 The analysis yielded several interesting insights:
 
-1. Most Common POS Tags:
-   - PUNCT (Punctuation): 15,292 occurrences
-   - NOUN (Nouns): 13,257 occurrences
-   - PROPN (Proper Nouns): 12,920 occurrences
-   - VERB (Verbs): 8,914 occurrences
-   - ADV (Adverbs): 7,605 occurrences
+1. Most Common POS Tags (Out of Total 225,910 words Pos):
+   - NOUN (Nouns): 64,828 occurrences
+   - PROPN (Proper Nouns): 45,284 occurrences
+   - PUNCT (Punction) : 26,546 occurences
+   - VERB (Verbs): 22,213 occurrences
+   - ADV (Adverbs): 18,825 occurrences
 
 2. Top Entities:
+   - "membantu" (helping): 3,480 occurences
    - "dokter" (doctor): 2,078 occurrences
    - "obat" (medicine): 1,857 occurrences
+   - "sangat" (very) : 1944 occurences
    - "aplikasi" (application): 874 occurrences
    - "konsultasi" (consultation): 812 occurrences
    - "rumah" (home): 470 occurrences
 
-3. Key Observations:
+4. Key Observations:
    - High frequency of nouns and proper nouns suggests users often refer to specific features or aspects of the app.
    - Significant presence of verbs indicates users describing actions or experiences.
    - Adverbs are commonly used, possibly to qualify experiences (e.g., "sangat membantu" - very helpful).
