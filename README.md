@@ -46,7 +46,10 @@ The analysis yielded several interesting insights:
    - VERB (Verbs): 22,213 occurrences
    - ADV (Adverbs): 18,825 occurrences
 
-2. Top Entities:
+2. Top Entities :
+   - "." : 15,292 occurences
+   - "," : 8,978 occurences
+   - "dan" (and) : 3,550 occurences 
    - "membantu" (helping): 3,480 occurences
    - "dokter" (doctor): 2,078 occurrences
    - "obat" (medicine): 1,857 occurrences
